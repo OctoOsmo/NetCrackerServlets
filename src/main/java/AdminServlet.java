@@ -9,15 +9,28 @@ import java.io.PrintWriter;
 /**
  * Created by al on 27.01.2016.
  */
-@WebServlet(name = "AdminServlet", urlPatterns = {"/admin"})
+@WebServlet("admin")
+
 public class AdminServlet extends HttpServlet {
+
+    private int counter = 0;
+//    private Integer sessionCounter;
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //        super.doGet(request, response);
+        Integer sessionCounter = (Integer) request.getSession().getAttribute("counter");
+        if (sessionCounter == null)
+            sessionCounter = 0;
         PrintWriter out = response.getWriter();
-        out.print("<h1>admin page</h1>");
+        out.print("<h1>admin page two</h1>");
+        out.print("<h1>counter = " + counter + "</h1>");
+        out.print("<h1>session counter = " + sessionCounter + "</h1>");
+        sessionCounter+=1;
+        request.getSession().setAttribute("counter", sessionCounter);
+        counter++;
     }
 }
