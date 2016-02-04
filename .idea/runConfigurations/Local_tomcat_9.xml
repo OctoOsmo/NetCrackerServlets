@@ -1,8 +1,9 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Local tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M1" ALTERNATIVE_JRE_ENABLED="false">
     <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+    <option name="UPDATING_POLICY" value="restart-server" />
     <deployment>
-      <artifact name="ServletsProject:war exploded">
+      <artifact name="ServletsProject:war">
         <settings>
           <option name="CONTEXT_PATH" value="/" />
         </settings>
@@ -67,7 +68,7 @@
     </ConfigurationWrapper>
     <method>
       <option name="BuildArtifacts" enabled="true">
-        <artifact name="ServletsProject:war exploded" />
+        <artifact name="ServletsProject:war" />
       </option>
     </method>
   </configuration>
