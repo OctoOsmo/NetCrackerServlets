@@ -17,7 +17,14 @@
         <div>
             <input type="submit" name="submit" value="submit">
         </div>
+
     </form>
+    <form action="beanData.jsp">
+        <div>
+            <input type="submit" name="submit" value="go to EJB data">
+        </div>
+    </form>
+
 </div>
 
 </body>

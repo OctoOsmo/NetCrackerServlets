@@ -1,3 +1,4 @@
+import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,6 +13,9 @@ import java.util.Map;
  */
 
 public class AuthServlet extends HttpServlet {
+
+    @EJB
+    InfoBean infoBean;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -30,7 +34,7 @@ public class AuthServlet extends HttpServlet {
         out.print("<form method=\"post\" action=\"index.jsp\">" +
                 "<input type=\"submit\" name=\"submit\" value=\"back to start\">" +
                 "</form>");
-
+        out.print(infoBean.getSomeStr());
     }
 
     @Override
