@@ -24,7 +24,11 @@
             <input type="submit" name="submit" value="go to EJB data">
         </div>
     </form>
-
+    <form action="user_info.html">
+        <div>
+            <input type="submit" name="submit" value="go data input">
+        </div>
+    </form>
 </div>
 
 </body>
