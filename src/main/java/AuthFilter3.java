@@ -38,7 +38,7 @@ public class AuthFilter3 implements Filter {
             out.println("<p>stored password = "+authInfo.get(login)+"</p>");
             filterChain.doFilter(servletRequest, servletResponse);
         }else{
-            ((HttpServletResponse) servletResponse).sendRedirect("error.jsp");
+            ((HttpServletResponse) servletResponse).sendRedirect("LoginError.jsp");
         }
     }
 

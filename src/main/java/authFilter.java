@@ -20,7 +20,7 @@ public class authFilter implements Filter {
             out.println("<h1>XML filter string</h1>");
             filterChain.doFilter(servletRequest, servletResponse);
         }else{
-            ((HttpServletResponse) servletResponse).sendRedirect("error.jsp");
+            ((HttpServletResponse) servletResponse).sendRedirect("LoginError.jsp");
         }
     }
 
