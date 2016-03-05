@@ -29,6 +29,11 @@
             <input type="submit" name="submit" value="go data input">
         </div>
     </form>
+    <form action="Store">
+        <div>
+            <input type="submit" name="submit" value="to store servlet">
+        </div>
+    </form>
 </div>
 
 </body>

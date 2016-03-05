@@ -3,7 +3,7 @@ package org;
 /**
  * Created by al on 04.03.2016.
  */
-public class UserInfoBean {
+public class UserInfo {
     private String userName;
     private Integer age;
     private String hairColor;

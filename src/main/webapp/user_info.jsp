@@ -14,7 +14,7 @@
 <div style="margin-left: 40%">
     <jsp:useBean
             id="userInfo"
-            class="org.UserInfoBean">
+            class="org.UserInfo">
         <jsp:setProperty name="userInfo" property="*" />
     </jsp:useBean>
 
